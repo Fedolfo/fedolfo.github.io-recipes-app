@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { useParams, useLocation, useHistory } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import MyContext from '../context/myContext';
 import shareIcon from '../images/shareIcon.svg';
 import '../css/pageProgress.css';
@@ -7,7 +7,6 @@ import { checkFavorite } from '../components/CheckFavorite';
 import FavoriteFood from '../components/FavoriteFoods';
 
 function FoodsProgress() {
-  const { pathname } = useLocation();
   const { mealId } = useParams();
   const [mealsDataById, setMealsDataById] = useState([]);
   const { listIngredients,
@@ -71,22 +70,12 @@ function FoodsProgress() {
     ingredientsInProgress();
   });
 
-  function copyUrl() {
-    const THREESEC = 3000;
-    const section = document.getElementById('sec-top');
-    const inviUrl = document.createElement('input');
-    const advise = document.createElement('span');
-    advise.innerText = 'Link copiado!';
-    inviUrl.value = `http://localhost:3000${pathname}`;
-    document.body.appendChild(inviUrl);
-    inviUrl.select();
-    document.execCommand('copy');
-    document.body.removeChild(inviUrl);
-    section.appendChild(advise);
-    setTimeout(() => {
-      section.removeChild(advise);
-    }, THREESEC);
-  }
+  // Source: https://newbedev.com/copy-url-to-clipboard-react-code-example
+  const handleClickShareIcon = () => {
+    const domain = `${window.location.protocol}//${window.location.host}`;
+    const fullURL = `${domain}${`/comidas/${mealId}/in-progress`}`;
+    navigator.clipboard.writeText(fullURL);
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -162,7 +151,7 @@ function FoodsProgress() {
                 </div>
                 <button
                   type="button"
-                  onClick={ copyUrl }
+                  onClick={ handleClickShareIcon }
                   className="icons"
                 >
                   <img

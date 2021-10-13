@@ -1,5 +1,5 @@
 import React, { useEffect, useContext, useState } from 'react';
-import { useLocation, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useHistory } from 'react-router';
 import shareIcon from '../images/shareIcon.svg';
 import MyContext from '../context/myContext';
@@ -9,7 +9,6 @@ import '../css/foodsdetails.css';
 import '../css/carousel.css';
 
 function FoodsDetails() {
-  const { pathname } = useLocation();
   const [mealsDataById, setMealsDataById] = useState([]);
   const [carouselData, setCarouselData] = useState([]);
   const { listIngredients,
@@ -87,23 +86,12 @@ function FoodsDetails() {
       </button>);
   };
 
-  // referência: https://blog.dadops.co/2021/03/17/copy-and-paste-in-a-react-app/
-  function copyUrl() {
-    const THREESEC = 3000;
-    const section = document.getElementById('sec-top');
-    const inviUrl = document.createElement('input');
-    const advise = document.createElement('span');
-    advise.innerText = 'Link copiado!';
-    inviUrl.value = `http://localhost:3000${pathname}`;
-    document.body.appendChild(inviUrl);
-    inviUrl.select();
-    document.execCommand('copy');
-    document.body.removeChild(inviUrl);
-    section.appendChild(advise);
-    setTimeout(() => {
-      section.removeChild(advise);
-    }, THREESEC);
-  }
+  // Source: https://newbedev.com/copy-url-to-clipboard-react-code-example
+  const handleClickShareIcon = () => {
+    const domain = `${window.location.protocol}//${window.location.host}`;
+    const fullURL = `${domain}${`/comidas/${mealId}`}`;
+    navigator.clipboard.writeText(fullURL);
+  };
 
   return (
     <main>
@@ -136,7 +124,7 @@ function FoodsDetails() {
                 <button
                   type="button"
                   data-testid="share-btn"
-                  onClick={ copyUrl }
+                  onClick={ handleClickShareIcon }
                   className="icons"
                 >
                   <img
