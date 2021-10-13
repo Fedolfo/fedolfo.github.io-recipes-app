@@ -81,12 +81,13 @@ const CardRecipeDone = (
       </div>
       <div>
         { arrTags && arrTags.map((tagName, index) => (
-          <div
+          <p
             data-testid={ `${indexProps}-${tagName}-horizontal-tag` }
             key={ index }
+            className="arrTags-style"
           >
             { tagName }
-          </div>
+          </p>
         )) }
       </div>
     </div>
