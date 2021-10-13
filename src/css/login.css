@@ -35,3 +35,9 @@
   justify-content: center;
   width: 100px;
 }
+
+.login_btn:disabled {
+  background-color: black;
+  color: white;
+  opacity: 0.5;
+}
