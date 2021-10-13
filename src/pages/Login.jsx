@@ -64,7 +64,7 @@ const Login = () => {
               className="login-inputs"
               name="email"
               id="email"
-              placeholder="Email"
+              placeholder="email@email.com"
               onChange={ handleChange }
             />
           </label>
@@ -75,7 +75,7 @@ const Login = () => {
               data-testid="password-input"
               className="login-inputs"
               type="password"
-              placeholder="Senha"
+              placeholder="123456"
               name="password"
               id="password"
               onChange={ handleChange }
