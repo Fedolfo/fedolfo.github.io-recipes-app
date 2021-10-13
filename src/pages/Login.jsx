@@ -75,7 +75,7 @@ const Login = () => {
               data-testid="password-input"
               className="login-inputs"
               type="password"
-              placeholder="123456"
+              placeholder="1234567"
               name="password"
               id="password"
               onChange={ handleChange }
