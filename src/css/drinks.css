@@ -1,0 +1,33 @@
+.main-container {
+  background-color: rgb(235, 238, 235);
+}
+
+.container-drinks {
+  align-items: center;
+  background-color: #ff9c4be7;
+  border-radius: 50% 20%;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: column;
+  margin: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.name-drinks {
+  color: white;
+}
+
+.container-drinks h3 {
+  font-size: 20px;
+  width: 150px;
+}
+
+.link-drinks {
+  color: black;
+  font-family: Raleway , sans-serif;
+}
+
+.image-drinks {
+  border-radius: 30px;
+}

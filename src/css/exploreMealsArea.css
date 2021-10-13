@@ -1,0 +1,47 @@
+.area-dropdown {
+  display: flex;
+}
+
+.area-dropdown select {
+  background-color: rgb(204, 203, 203);
+  box-shadow: 0 10px 10px rgb(75, 72, 72);
+  color: black;
+  font-family: Raleway , sans-serif;
+  font-size: 20px;
+  height: 60px;
+  text-align: center;
+  width: 100%;
+}
+
+.area-dropdown select option {
+  color: black;
+  font-family: Raleway , sans-serif;
+  font-size: 22px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* .main-container-mealsArea {
+} */
+
+.main-container-mealsArea .container-meals {
+  align-items: center;
+  background-color: rgb(146, 147, 211);
+  border-radius: 50% 20%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-container-mealsArea .container-meals h3 {
+  color: black;
+  font-family: Raleway , sans-serif;
+  font-size: 20px;
+  width: 150px;
+}
+
+.main-container-mealsArea .container-meals .image-explore {
+  border-radius: 30px;
+}

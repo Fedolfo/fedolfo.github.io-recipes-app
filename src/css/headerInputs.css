@@ -1,0 +1,42 @@
+.query-container-inputs {
+  background-color: rgb(235, 238, 235);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.query-container input {
+  border-radius: 5px;
+  height: 30px;
+  margin-top: 10px;
+  padding: 10px;
+  width: auto;
+}
+
+.container-radio {
+  align-items: center;
+  display: flex;
+  margin: 10px;
+}
+
+.container-radio label {
+  font-family: Raleway , sans-serif;
+  font-size: 17px;
+  margin-right: 9px;
+}
+
+.container-radio input {
+  float: left;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+.button-entry {
+  background-color: rgb(226, 228, 226);
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px rgb(75, 72, 72);
+  font-family: Raleway , sans-serif;
+  margin-bottom: 20px;
+  padding: 8px;
+  width: 170px;
+}

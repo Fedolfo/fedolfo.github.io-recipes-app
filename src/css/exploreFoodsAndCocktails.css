@@ -1,0 +1,15 @@
+.container-main-explore {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+}
+
+.container-main-explore button {
+  background-color: rgb(226, 228, 226);
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px rgb(75, 72, 72);
+  font-family: Raleway , sans-serif;
+  margin: 10px;
+  padding: 25px;
+}

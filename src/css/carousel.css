@@ -1,0 +1,16 @@
+.recomendation-container {
+  display: flex;
+  height: 250px;
+  margin-left: 30px;
+  overflow-x: scroll;
+  padding: 10px;
+  width: 360px;
+}
+
+.recomendation-container h4 {
+  text-align: center;
+}
+
+.recomendation-container div {
+  margin-left: 10px;
+}

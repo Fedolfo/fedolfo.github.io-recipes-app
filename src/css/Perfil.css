@@ -1,0 +1,28 @@
+.container-main-perfil {
+  min-height: 100vh;
+}
+
+.container-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 40px;
+}
+
+.container-buttons span {
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.container-buttons button {
+  background-color: rgb(226, 228, 226);
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px rgb(75, 72, 72);
+  font-family: Raleway , sans-serif;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}

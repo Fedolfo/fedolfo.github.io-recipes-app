@@ -1,0 +1,30 @@
+.main-container-ingred {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.link-foods {
+  color: black;
+  font-family: Raleway , sans-serif;
+}
+
+.main-container-ingred button {
+  border: none;
+}
+
+.main-container-ingred section {
+  align-items: center;
+  background-color: rgb(8, 246, 171);
+  border-radius: 50% 20%;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-container-ingred section h3 {
+  font-size: 20px;
+  width: 150px;
+}
