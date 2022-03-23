@@ -7,4 +7,4 @@
 * Hooks
 
 
-Desenvolvimento do projeto: Criação da arquitetura componentizada, context Api, manipulão de API externa, css!
+Desenvolvimento do projeto: Criação da arquitetura componentizada de acordo com padronização React, context Api, manipulão de API externa, css!
